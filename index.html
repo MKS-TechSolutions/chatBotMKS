@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">ink
+    <title>MKS Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="welcome-screen" class="screen">
+            <div class="welcome-card">
+                <div class="logo-glow">
+                    <img src="img/logoMKS.png" alt="MKS Tech" class="logo-welcome">
+                </div>
+                <h2 class="fade-in">Bem-vindo à MKS!</h2>
+                <p>Sua próxima experiência tecnológica começa aqui.</p>
+                
+                <div class="welcome-bot">
+                    <div class="bot-avatar big"><div class="bot-eye"></div></div>
+                </div>
+
+                <div class="btn-group-intro">
+                    <button class="btn-main primary" onclick="iniciarFluxo('cliente')">Já sou Cliente ✅</button>
+                    <button class="btn-main secondary" onclick="iniciarFluxo('visitante')">Não sou Cliente 🚀</button>
+                </div>
+            </div>
+            <footer class="chat-footer">
+                <p>&copy; 2025 MKS Tech Solutions. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+
+        <div id="chat-interface" class="screen hidden">
+            <header>
+                <div class="bot-avatar small"><div class="bot-eye"></div></div>
+                <div class="header-info">
+                    <span class="name">MKS Tech Solutions</span>
+                    <div class="status-container">
+                        <span class="dot-online"></span>
+                        <small>Assistente Online</small>
+                    </div>
+                </div>
+            </header>
+            
+            <div id="chat-window">
+                <div id="typing-indicator" class="msg bot hidden">
+                    <span class="dot-typing"></span><span class="dot-typing"></span><span class="dot-typing"></span>
+                </div>
+                <div id="scroll-anchor"></div>
+            </div>
+
+            <div class="interaction-area">
+                <div id="options-container" class="btn-group"></div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Mande sua mensagem...">
+                    <button id="send-btn" onclick="handleInput()">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
