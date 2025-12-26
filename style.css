@@ -8,8 +8,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #010409;
-    margin: auto;
-    zoom: 1;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -363,3 +362,4 @@ h2 {
         opacity: 1;
     }
 }
+
