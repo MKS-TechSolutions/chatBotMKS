@@ -224,7 +224,7 @@ function executarAcao(opcao) {
         return;
     }
 
-    botFala("Não captei essa informação. Vamos tentar pelo menu?");
+    botFala("Bhaa! Não captei essa informação. Vamos tentar pelo menu?");
     setTimeout(menuPrincipal, 1000);
 }
 
@@ -301,5 +301,6 @@ function handleInput() {
     }
     input.value = '';
 }
+
 
 
